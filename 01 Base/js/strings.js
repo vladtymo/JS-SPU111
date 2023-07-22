@@ -23,7 +23,7 @@ console.log("After replace: ", login.replaceAll(" ", "-"));
 
 let welcome = "Hello";
 console.log(welcome.repeat(3));
-console.log("Hello".repeat(3));
+console.log("*".repeat(10));
 
 // get substring from {3} index to {8} index
 console.log("Slice from 3 to 8: ", login.slice(3, 8));
