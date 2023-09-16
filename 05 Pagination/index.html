@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AJAX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-3">
+        <h1>Communication with Server using AJAX</h1>
+        <p>
+            Asynchronous JavaScript and XML, or Ajax, is not a technology in itself, but rather an approach to using a
+            number of existing technologies together, including HTML or XHTML, CSS, JavaScript, DOM, XML, XSLT, and most
+            importantly the XMLHttpRequest object.
+        </p>
+
+        <h2>User List</h2>
+        <ul id="userList" class="list-group">
+
+        </ul>
+
+        <button id="moreBtn" type="button" class="btn btn-info mt-2">Show More</button>
+
+        <div>
+            <ul class="pagination justify-content-center" id="pageList">
+              <!-- <li class="page-item disabled">
+                <a class="page-link" href="#">&laquo;</a>
+              </li> -->
+              <!-- <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li> -->
+              <!-- <li class="page-item">
+                <a class="page-link" href="#">&raquo;</a>
+              </li> -->
+            </ul>
+          </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
